@@ -39,6 +39,10 @@ header img {
   height: 100%;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .search {
   margin-top: 2rem;
   border: 2px solid rgb(255, 255, 255);

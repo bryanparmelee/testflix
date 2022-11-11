@@ -26,6 +26,8 @@ function App() {
       });
   };
 
+  const refresh = () => getMovies(FEATURED_API);
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
@@ -44,7 +46,10 @@ function App() {
     <>
       <header>
         <div className="logo">
-          <img src={logo} alt="Testflix logo" href="#" />
+          <img 
+            src={logo} 
+            alt="Testflix logo" 
+            onClick={refresh} />
         </div>
         <form onSubmit={handleOnSubmit}>
           <input
